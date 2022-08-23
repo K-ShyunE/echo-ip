@@ -6,10 +6,6 @@ pipeline {
         git url: 'https://github.com/K-ShyunE/echo-ip', branch: 'main'
       }
     }
-    stage('docker build and push') {
-      steps {
-      }
-    }
     stage('deploy kubernetes') {
       steps {
         sh '''
